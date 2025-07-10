@@ -29,6 +29,12 @@ importers:
       rxjs:
         specifier: ^7.8.1
         version: 7.8.2
+      zod:
+        specifier: ^4.0.3
+        version: 4.0.3
+      zod-validation-error:
+        specifier: 4.0.0-beta.1
+        version: 4.0.0-beta.1(zod@4.0.3)
     devDependencies:
       '@nestjs/cli':
         specifier: ^11.0.0
@@ -3138,6 +3144,15 @@ packages:
   yoctocolors-cjs@2.1.2:
     resolution: {integrity: sha512-cYVsTjKl8b+FrnidjibDWskAv7UKOfcwaVZdp/it9n1s9fU3IkgDbhdIRKCW4JDsAlECJY0ytoVPT3sK6kideA==}
     engines: {node: '>=18'}
+
+  zod-validation-error@4.0.0-beta.1:
+    resolution: {integrity: sha512-42DSXwZyDKeLHrug+luXt6RMaoYsgMXc68bCz9kOyk66k7XBG35cAxsu2Lg42uVrJ1kEem2RyHxMBAv25SeZzQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      zod: ^3.25.0
+
+  zod@4.0.3:
+    resolution: {integrity: sha512-V78FonTAxtGAyF2xR75x0YoW8uKXdQiusoPtzbT07vH3mZiGdTQN6INuivHyYT6M2V2YRFDEKIF4ylTJh54EXg==}
 
 snapshots:
 
@@ -6585,3 +6600,9 @@ snapshots:
   yocto-queue@0.1.0: {}
 
   yoctocolors-cjs@2.1.2: {}
+
+  zod-validation-error@4.0.0-beta.1(zod@4.0.3):
+    dependencies:
+      zod: 4.0.3
+
+  zod@4.0.3: {}
